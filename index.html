@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+      />
+      <!-- Link Swiper's CSS -->
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+      />
+        
+        <title>DEMO</title>
+        <style>
+          body {
+            width: auto;
+            margin: 0px auto;
+          
+          }
+
+          #top {
+            width: auto;
+            height: 180px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            text-align: center;
+            line-height: 1.35em;
+            font-size: 90px;
+            font-family: "Times New Roman", Times, sans-serif;
+            font-weight: 900;
+          }
+          #banner {
+            height: auto;
+            background-color: rgb(230, 235, 240);
+            border-top: 1px 7px solid black;
+            padding-top: 30px;  
+          } 
+          #banner div {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+          }
+           #navbar {
+            display: flex;
+            justify-content: center;
+            gap: 0 30px;
+            border-top: 1px solid black;
+            padding: 20px 0;
+            margin: 0 200px;
+          }
+          #navbar1 {
+            font-size: 60px;
+            justify-content: space-around;
+            align-items: center;
+            display: flex;
+            padding-top: 50px;
+          }
+          body {
+        position: relative;
+        height: 100%;
+      }
+
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: rgb(230, 235, 240);
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+      }
+      #mid {
+        background-color: #DDEFF2;
+        
+        height: 300px;
+        padding-top:135px;
+       text-align: center;
+        line-height: 45px;
+      }
+      #mid1 {
+        background-color: #FFFFFF;
+        
+        height: 250px;
+        padding-top:135px;
+       text-align: center;
+        line-height: 45px;
+      }
+      #mid2 {
+        background-color: #F1F1F1;
+        
+        height: 250px;
+        padding-top:135px;
+       text-align: center;
+        line-height: 45px;
+      }
+      #mid3 {
+      
+        
+        height: 250px;
+        padding-top:135px;
+        text-align: center;
+        line-height: 45px;
+      }
+     #mid3  div box{
+      background-color: #FF9C9D;
+      width: 500px;
+      height: 70px;
+      border-radius: 7px;
+      box-sizing: border-box;
+     }
+        </style>
+        <link
+          rel="stylesheet"
+          href="https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css"
+        />
+      </head>
+
+      <body>
+        <div id="top">
+          <div>Cửa hàng</div>
+        </div>
+
+        <div id="banner">
+          <div id="navbar">
+                <div>Trang chu</div>
+                <div>About</div>
+                <div>Contact</div>
+                <div>Services</div>
+                <div>Products</div>
+                <div>Đặt trực tiếp</div>
+                <div>Danh mục dự án</div>
+          </div>
+          <div id="navbar1">WELCOME TO CỬA HÀNG</div>
+          
+          </div>
+          <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          
+          
+          <div class="swiper-slide" style="height: 600px;padding-top: 40px ;"><img src =".vscode/images/anh2.jpg"/></div>
+          <div class="swiper-slide" style="height: 600px;padding-top: 40px ;"><img src =".vscode/images/anh2.jpg"/></div>
+          <div class="swiper-slide" style="height: 600px;padding-top: 40px ;"><img src =".vscode/images/anh2.jpg"/></div>
+          <div class="swiper-slide" style="height: 600px;padding-top: 40px ;"><img src =".vscode/images/anh2.jpg"/></div>
+          <div class="swiper-slide" style="height: 600px;padding-top: 40px ;"><img src =".vscode/images/anh2.jpg"/></div>
+         
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+  
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 0,
+          centeredSlides: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
+          }
+        });
+      </script> 
+        <div id ="mid">
+          <div style="font-size:40px;">MORE ABOUT SILCO ME</div>
+          <div style="font-family:Times New Roman,Times, serif;font-size: 18px;">Our Story</div>
+          <div style="font-family:Times New Roman,Times, serif;font-size: 18px;"> ​SILCO ME tiền thân là Công ty TNHH NEWSUN</div>
+        </div>
+        <div id ="mid1">
+          <div style="font-size:25px;">Hiện chưa có dịch vụ để đặt. Vui lòng kiểm tra lại sau.</div>
+          
+        </div>
+        <div id ="mid2">
+          <div style="font-size:40px;">CONTACT US</div>
+          <div style="font-family:Times New Roman,Times, serif;font-size: 18px;">500 Terry Francois Street, 6th Floor. San Francisco, CA 94158</div>
+          <div style="font-family:Times New Roman,Times, serif;font-size: 18px;">info@mysite.com</div>
+          <div style="font-family:Times New Roman,Times, serif;font-size: 18px;"> 123-456-7890</div>
+
+        </div>
+        <div id ="mid3">
+          <div style="font-size:35px;">Subscribe Form</div>
+          <div>
+            <div id="box">
+             <div>
+              <input type="text" placeholder="e,g.email@gmail.com" style ="height:40px;width:450px;font-size:18px;" />
+              <input>
+            </div>
+            </div>
+          </div>
+          <div style="font-family:Times New Roman,Times, serif;font-size: 18px;">info@mysite.com</div>
+          <div style="font-family:Times New Roman,Times, serif;font-size: 18px;"> 123-456-7890</div>
+
+        </div>
+
+
+      </body>
+    </html>
+    
+ 
